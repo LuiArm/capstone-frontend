@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Flashcard.css'
 
 
 export default function Flashcard( {flashcard} ) {
