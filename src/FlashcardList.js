@@ -8,25 +8,25 @@ export default function FlashcardList(props) {
     console.log('flashcards',flashcards)
     return (
       <div className="f-container">
-        <h1>Flashcards</h1>
+        <h1 className="f-header">Flashcards</h1>
         <Link to='/create'>
-        <button>Add Flashcard</button>
+        <button className="f-btn">Add Flashcard</button>
         </Link>
           <div className="card-grid">
         {flashcards.map( (item, index) => (
             <article id="display-contatiner"
                 key={item.Flashcardid}>
-                <h3>Subject: {item.Subject}</h3>
+                <h3 className="s-header">Subject: {item.Subject}</h3>
                 {/* <h3>Question: {item.Question}</h3>
                 <h3>Answer: {item.CorrectAns}</h3> */}
-                <button
+                <button className="e-btn"
                     onClick={ () => {
                         props.selectFlashcard(item)
                         props.history.push('/edit')
                     }}
                 >Edit
                 </button>
-                <button
+                <button className="d-btn"
                     onClick={ () => {
                         props.deleteFlashcard(item)
                     }}>

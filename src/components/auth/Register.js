@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Auth } from "aws-amplify";
+import './Register.css'
 
 class Register extends Component {
   state = {
@@ -60,9 +61,9 @@ class Register extends Component {
 
   render() {
     return (
-      <section className="section auth">
+      <section className="section_auth">
+        <h1 className="sign-up">Sign Up!Its Free!</h1>
         <div className="container">
-          <h1>Register</h1>
           <form onSubmit={this.handleSubmit}>
             <div className="field">
               <p className="control">
@@ -124,14 +125,14 @@ class Register extends Component {
               </p>
             </div>
             <div className="field">
-              <p className="control">
+              {/* <p className="control">
                 <a href="/forgotpassword">Forgot password?</a>
-              </p>
+              </p> */}
             </div>
             <div className="field">
               <p className="control">
-                <button className="button is-success">
-                  Register
+                <button className="btn">
+                  Sign Up
                 </button>
               </p>
             </div>

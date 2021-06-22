@@ -1,12 +1,48 @@
-.section_auth{
+/* .section_auth{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.container {
+.section_auth{
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+.sign-up {
+    /* display: flex; */
+    align-items: center;
+    margin-left: 290px;
+    margin-bottom: 500px;
+    color: #2e4a66;
+
+}
+
+.container{
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin: 150px 50px 50px 50px;   
+}
+
+.input {
+    border-radius: 15px;
+    width: 200px;
+    height: 27px;
+    
+}
+
+.btn {
+    background-color: #2e4a66;
+    color: #ffffff;
+    /* margin-left: 40px; */
+    width: 200px;
+    border-radius: 15px;
+    height: 27px;
+}
+
+
