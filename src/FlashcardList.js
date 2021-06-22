@@ -17,8 +17,6 @@ export default function FlashcardList(props) {
             <article id="display-contatiner"
                 key={item.Flashcardid}>
                 <h3 className="s-header">Subject: {item.Subject}</h3>
-                {/* <h3>Question: {item.Question}</h3>
-                <h3>Answer: {item.CorrectAns}</h3> */}
                 <button className="e-btn"
                     onClick={ () => {
                         props.selectFlashcard(item)
@@ -43,10 +41,3 @@ export default function FlashcardList(props) {
 
 
 
-{/* <div className="card-grid">
-{flashcards.map(flashcard => {
-    return 
-    <Flashcard flashcard={flashcard} key={flashcard.Id}
-     />
-})}
-</div> */}
