@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Auth } from "aws-amplify";
 import './Register.css'
+import {Route} from 'react-router-dom'
 
 class Register extends Component {
   state = {
@@ -125,9 +126,6 @@ class Register extends Component {
               </p>
             </div>
             <div className="field">
-              {/* <p className="control">
-                <a href="/forgotpassword">Forgot password?</a>
-              </p> */}
             </div>
             <div className="field">
               <p className="control">

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar"
 import Dashboard from './components/Dashboard'
 import Register from './components/auth/Register'
 import Form from './Form'
+import Welcome from './components/auth/Welcome'
 import {Route,Switch,Link} from 'react-router-dom'
 
 function App() {
@@ -74,8 +75,13 @@ const deleteFlashcard = (flashcard) => {
       <Navbar />
       <Switch>
         
-        <Route exact path="/"><Register /></Route>
+        <Route exact path="/"render={(routerProps) => <Register
+        {...routerProps}
+         />} />
         <Route path="/dashboard"><Dashboard /></Route>
+        <Route path="/welcome" render={(routerProps) => <Welcome
+        {...routerProps}
+         />} />
         <Route path="/flashcards" render={(routerProps) => <FlashcardList 
         {...routerProps}
           flashcards={flashcards}
