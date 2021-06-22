@@ -14,7 +14,7 @@ export default function Flashcard( {flashcard} ) {
             <div className="front">
                 {flashcard.Question}
             </div>
-            <div className="back">{flashcard.Answer}</div> 
+            <div className="back">{flashcard.CorrectAns}</div> 
         </div>
     )
 }

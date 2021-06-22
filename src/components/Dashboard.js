@@ -1,7 +1,6 @@
 import React from 'react'
 import dashboard from './Dashboard.css'
-
-
+import Chart from './Chart'
 
 export default function Dashboard () {
     return (
@@ -17,34 +16,34 @@ export default function Dashboard () {
                 <div className="main__cards">
 
                     <div className="d-card">
-                        <i className = "fa fa-user-o fa-2x text-lightblue"></i>
+                    
                         <div className="card_inner">
                             <p className="text-primary-p">Number of cards</p>
-                            <span className="font-bold text-title">578</span>
+                            <span className="font-bold text-title">5</span>
                         </div>
                     </div>
 
                     <div className="d-card">
-                        <i className="fa fa-calendar fa-2x"></i>
+                        
                         <div className="card_inner">
                             <p className="text-primary-p">number of decks</p>
-                            <span className="font-bold text-title">2467</span>
+                            <span className="font-bold text-title">2</span>
                         </div>
                     </div>
 
                     <div className="d-card">
-                        <i className="fa fa-video-camera fa-2x text-yellow"></i>
+                        
                         <div className="card_inner">
                             <p className="text-primary-p">Number of cards left</p>
-                            <span className="font-bold text-title">340</span>
+                            <span className="font-bold text-title">40</span>
                         </div>
                     </div>
 
                     <div className="d-card">
-                        <i className="fa fa-thumbs-up fa-2x text-green"></i>
+                       
                         <div className="card_inner">
-                             <p className="text-primary-p">Number</p>
-                             <span className="font-bold text-title">645</span>
+                             <p className="text-primary-p">Subjects</p>
+                             <span className="font-bold text-title">1</span>
                         </div>
                     </div>
 
@@ -57,11 +56,11 @@ export default function Dashboard () {
                                 <h1>Study Report</h1>
                                 <p>Daily</p>
                             </div>
-                            <i className="fa fa-usd"></i>
+
                         </div>
+                        <Chart />
                     </div>
-
-
+                 
                 </div>
             </div> 
         </main>

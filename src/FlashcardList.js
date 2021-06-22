@@ -7,17 +7,18 @@ export default function FlashcardList(props) {
     const {flashcards} = props
     console.log('flashcards',flashcards)
     return (
-        <div className="card-grid">
+      <div className="f-container">
         <h1>Flashcards</h1>
         <Link to='/create'>
         <button>Add Flashcard</button>
         </Link>
+          <div className="card-grid">
         {flashcards.map( (item, index) => (
             <article id="display-contatiner"
                 key={item.Flashcardid}>
                 <h3>Subject: {item.Subject}</h3>
-                <h3>Question: {item.Question}</h3>
-                <h3>Answer: {item.CorrectAns}</h3>
+                {/* <h3>Question: {item.Question}</h3>
+                <h3>Answer: {item.CorrectAns}</h3> */}
                 <button
                     onClick={ () => {
                         props.selectFlashcard(item)
@@ -31,11 +32,11 @@ export default function FlashcardList(props) {
                     }}>
                     Delete
                 </button>
-
+                <Flashcard flashcard={item}/>
             </article>
         ))}
     </div>    
-
+    </div>
        
     )
 }
